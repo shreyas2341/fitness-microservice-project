@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: fitness-backend
+    env: java
+    rootDir: "Fitness MicroService Project/Fitness MicroService Project-Backend"
+    buildCommand: "./mvnw clean package -DskipTests"
+    startCommand: "java -jar target/*.jar"
+    envVars:
+      - key: SERVER_PORT
+        value: 8080
